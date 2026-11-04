@@ -4,8 +4,7 @@ A consent-based remote screen-view-and-control app for Android. A **controller**
 device views and drives a **target** device over WebRTC, with Supabase for auth,
 data, and signaling.
 
-This project is a clean-room reimplementation modeled on the observed architecture
-of an existing app. It deliberately **does not** auto-accept Android's screen-capture
+ It deliberately **does not** auto-accept Android's screen-capture
 consent dialog or silently resume capture after reboot: the target user explicitly
 approves each capture session. Keep it thatl way — it is what makes the app lawful
 to ship and compliant with Google Play policy.
