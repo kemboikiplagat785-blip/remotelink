@@ -25,19 +25,6 @@ to ship and compliant with Google Play policy.
 - **Controller**: renders the remote video and sends control events (taps,
   swipes, text, nav) back over the WebRTC data channel.
 
-## Setup
-
-1. **Rename the app id**: change `appId` in `gradle.properties` from the
-   placeholder `com.acme.remotesupport` to your own, then sync. Update
-   `app/src/main/res/values/strings.xml` `app_name`.
-2. **Secrets**: copy `secrets.defaults.properties` to `secrets.properties` and
-   fill in your Supabase URL/anon key, TURN server, and (optional) M-Pesa / SMS
-   values. `secrets.properties` is gitignored and never committed.
-3. **Backend**: deploy `backend/schema.sql` to your Supabase project, then deploy
-   the edge functions in `backend/functions/`. See `backend/README.md`.
-4. **SDK**: point `local.properties` at your Android SDK (Android Studio does this
-   on sync), e.g. `sdk.dir=C\:/Users/you/AppData/Local/Android/Sdk`.
-5. Build: `./gradlew :app:assembleDebug`.
 
 ## Module map
 
