@@ -1,0 +1,5 @@
+{
+  "//": "Supabase Edge Functions run on Deno, not Node. Scope the Deno language server to that folder so 'Deno', remote https imports, etc. type-check correctly. The rest of the repo (the Android app) stays on the default tooling.",
+  "deno.enablePaths": ["backend/functions"],
+  "deno.unstable": false
+}

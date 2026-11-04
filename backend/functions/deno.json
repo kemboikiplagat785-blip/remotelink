@@ -1,0 +1,5 @@
+{
+  "//": "Marks this folder as a Deno project for the editor's Deno language server.",
+  "lint": { "rules": { "tags": ["recommended"] } },
+  "fmt": { "semiColons": true, "lineWidth": 100 }
+}

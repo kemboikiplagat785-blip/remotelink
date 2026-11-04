@@ -1,0 +1,16 @@
+*.iml
+.gradle/
+/local.properties
+/secrets.properties
+/keystore.properties
+/keystore/
+.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/app/build/
+backend/functions/**/.env
+.venv/

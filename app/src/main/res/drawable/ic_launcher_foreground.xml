@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- A simple monitor + cursor glyph on the adaptive foreground layer. -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,38h40a4,4 0 0 1 4,4v20a4,4 0 0 1 -4,4h-40a4,4 0 0 1 -4,-4v-20a4,4 0 0 1 4,-4zM36,44v16h36v-16z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M50,70h8v4h-8zM44,74h20v3h-20z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,48l12,6l-5,1l3,6l-3,1l-3,-6l-4,3z" />
+</vector>
