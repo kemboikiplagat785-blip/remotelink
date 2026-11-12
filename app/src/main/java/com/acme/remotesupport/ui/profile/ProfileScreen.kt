@@ -85,7 +85,7 @@ fun ProfileScreen(onBack: () -> Unit) {
                     Text("Allow this device to be controlled", style = MaterialTheme.typography.titleMedium)
                     Text(
                         "To let an approved session control this device, enable the " +
-                            "RemoteSupport accessibility service. You can turn it off anytime.",
+                            "Remote clone accessibility service. You can turn it off anytime.",
                         style = MaterialTheme.typography.bodySmall,
                         modifier = Modifier.padding(vertical = 8.dp),
                     )

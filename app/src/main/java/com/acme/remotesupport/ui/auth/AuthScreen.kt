@@ -1,5 +1,7 @@
 package com.acme.remotesupport.ui.auth
 
+import com.acme.remotesupport.R
+import androidx.compose.ui.res.stringResource
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
@@ -31,7 +33,7 @@ fun AuthScreen(vm: AuthViewModel = viewModel()) {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-        Text("RemoteSupport", style = MaterialTheme.typography.headlineMedium)
+        Text(stringResource(R.string.app_name), style = MaterialTheme.typography.headlineMedium)
         Text(
             if (state.mode == AuthMode.SIGN_IN) "Sign in to your account" else "Create an account",
             style = MaterialTheme.typography.bodyMedium,

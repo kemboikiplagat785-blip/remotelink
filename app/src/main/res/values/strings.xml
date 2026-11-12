@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">Remote_Support</string>
-    <string name="accessibility_label">Remote_Support Control</string>
+    <string name="app_name">Remote clone</string>
+    <string name="accessibility_label">Remote clone Control</string>
     <string name="accessibility_description">Lets an approved remote session tap, swipe and type on this device during a support session you have agreed to. You can turn this off at any time in Settings.</string>
     <string name="capture_stop_action">Stop sharing</string>
     <string name="capture_channel_name">Screen sharing</string>
