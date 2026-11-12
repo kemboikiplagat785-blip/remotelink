@@ -9,6 +9,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.gestures.detectDragGestures
 import androidx.compose.foundation.gestures.detectTapGestures
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.aspectRatio
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -135,9 +136,16 @@ fun RemoteControlScreen(
             .onSizeChanged { viewSize = it },
         contentAlignment = Alignment.Center,
     ) {
-        // The remote screen, filling the whole display.
+        // The whole remote screen, as large as fits. The renderer crops the frame to the
+        // shape of its view, so the view must take the frame's shape or the remote's status
+        // and navigation bars are cut off when the two phones' screens differ.
         if (track != null) {
-            VideoSurface(track, Modifier.fillMaxSize(), onFrameSize = { frameSize = it })
+            val videoModifier = if (hasFrame) {
+                Modifier.aspectRatio(frameSize.width.toFloat() / frameSize.height)
+            } else {
+                Modifier.fillMaxSize()
+            }
+            VideoSurface(track, videoModifier, onFrameSize = { frameSize = it })
         }
 
         // Gesture layer over the full screen: taps/drags go to the controlled phone.
